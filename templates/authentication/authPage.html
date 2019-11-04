@@ -1,0 +1,27 @@
+{% extends "wrapper.html" %}
+
+{% block content %}
+    {% if user.is_authenticated %}
+        <a  href="{% url "auth:logout" %}" class="btn btn_header">
+             <li class="btn_item">
+                <img src="static/authentication/image/steamLogo.png" alt="steam">
+            </li>
+            <li class="btn_item">
+            Выйти из steam
+            </li>
+        </a>
+<!--        <br>-->
+<!--        Hello, {{ user.personaname }}-->
+<!--        <br>-->
+<!--        {{ name }}-->
+    {% else %}
+        <a  href="{% url "social:begin" "steam" %}" class="btn btn_header">
+            <li class="btn_item">
+                <img src="static/authentication/image/steamLogo.png" alt="steam">
+            </li>
+            <li class="btn_item">
+            Войдите через steam
+            </li>
+        </a>
+    {% endif %}
+{% endblock %}

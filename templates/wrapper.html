@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Заголовок страницы</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}" type="text/css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="pic"></div>
+        <div class="container">
+            <div class="nav">
+                <ul class="menu">
+                    <li class="menu_item">
+                        <a href="#">Как это работает?</a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="#">FAQ</a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="#">Боты</a>
+                    </li>
+                </ul>
+                <a href="#" class="logo">
+                    <img src="{% static 'authentication/image/mainLogo.png' %}" alt="CSGOTRADEMARKET">
+                </a>
+                {% block content %}
+                {% endblock %}
+            </div>
+            <div class="offer">
+                <div class="offer_content">
+                    <div class="offer_intro">
+                        Скины по самым выгодным ценам
+                    </div>
+                    <p class="offer_title">
+                        СКИДКИ ДО 50%
+                    </p>
+                    <a href="#" class="btn-shop btn-shop_header">
+                        Открыть магазин
+                    </a>
+                    <div class="item_price_old">
+                        3800 ₽
+                    </div>
+                    <div class="item_price_new">
+                        1900 ₽
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <section class="features" id="features">
+        <div class="container">
+            <ul class="features_list">
+                <li class="features_item">
+                    <img src="{% static 'authentication/image/time.png' %}" alt="time">
+                </li>
+                <li class="features_item">
+                    <img src="{% static 'authentication/image/gun.png' %}" alt="gun">
+                </li>
+                <li class="features_item">
+                    <img src="{% static 'authentication/image/safe.png' %}" alt="safe">
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="info" id="info">
+        <div class="container">
+            <div class="nav">
+                <div class="smallLogo">
+                    <img src="{% static 'authentication/image/logo.png' %}" alt="logo">
+                    <div class="smallLogoText">
+                        Обмен скинов cs go. Все права защищены.
+                        Данный сайт не является частью корпорации valve.
+                    </div>
+                </div>
+                <ul class="smallMenu">
+                    <li class="smallMenu_text">
+                        Разделы
+                    </li>
+                    <li class="smallMenu_item">
+                        <a href="#">Обмен скинов</a>
+                    </li>
+                    <li class="smallMenu_item">
+                        <a href="#">Трейд площадка</a>
+                    </li>
+                    <li class="smallMenu_item">
+                        <a href="#">FAQ</a>
+                    </li>
+                    <li class="smallMenu_item">
+                        <a href="#">Боты</a>
+                    </li>
+                </ul>
+                <div class="payLogo">
+                     <img src="{% static 'authentication/image/payment.png' %}" alt="payment">
+                </div>
+                <div class="links">
+                    <img src="{% static 'authentication/image/links.png' %}" alt="links">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

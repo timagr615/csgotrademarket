@@ -1,0 +1,278 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #F9F6F1;
+    color: #212121;
+    color: #D7B399;
+    color: #CECECE;
+    color: #D84033;
+    color: #FFFFFF;
+    color: #FCF2E1;
+    color: #CBCFD4;
+    font-size: 14px;
+}
+.container {
+    max-width: 1332px;
+    margin: 0 auto;
+}
+
+.header {
+	background: #F9F6F1;
+	padding: 53px 0;
+}
+
+.features {
+	background: #212121;
+	padding: 53px 0;
+}
+
+.info {
+	background: #757171;
+	padding: 53px 0;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	transition: all 0.5s ease;
+}
+
+.btn {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	letter-spacing: 0.03em;
+	border-radius: 50px;
+	width: 230px;
+	height: 30px;
+	color: #212121;
+	padding: 10px 0;
+	background: #D7B399;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn:hover {
+	background: #FFD4B5;
+}
+
+.btn-shop {
+	width: 200px;
+	background: #D7B399;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 50px;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.03em;
+	color: #212121;
+	padding: 10px 0px;
+	display: block;
+	text-align: center;
+}
+
+.btn-shop:active {
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.3) inset;
+}
+
+.btn-shop:hover {
+	box-shadow: none;
+}
+
+.nav {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+}
+
+.logo {
+	margin-left: 120px;
+}
+
+.menu {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.offer {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.menu_item {
+	margin-right: 75px;
+}
+
+.menu_item a {
+	color: #212121;
+	font-weight: 600;
+	font-size: 14px;
+	letter-spacing: 0.03em;
+	line-height: 17px;
+}
+
+.menu_item a:hover {
+	border-bottom: 2px solid #212121;
+}
+
+.btn_item {
+	margin-left: 5px
+}
+
+.btn_header {
+	margin-left: auto;
+}
+
+.offer_intro {
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 37px;
+	letter-spacing: 0.02em;
+	color: #000000;
+	margin-top: 169px;
+}
+
+.offer_title {
+	font-weight: bold;
+	font-size: 55px;
+	line-height: 67px;
+	letter-spacing: 0.04em;
+	color: #000000;
+	margin-top: 35px;
+}
+
+.btn-shop_header {
+	margin-top: 55px;
+	margin-bottom: 326px;
+}
+
+.pic {
+	background: url("../authentication/image/knife.png") no-repeat left top;
+	position: absolute;
+	left: 950px;
+	top: 236px;
+	width: 640px;
+	height: 366px;
+	margin-bottom: 198px;
+}
+
+.item_price_old {
+	position: absolute;
+	left: 1514px;
+	top: 256px;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: right;
+	letter-spacing: 0.05em;
+	text-decoration-line: line-through;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.item_price_new {
+	position: absolute;
+	width: 163px;
+	height: 51px;
+	left: 1462px;
+	top: 299px;
+	font-weight: bold;
+	font-size: 42px;
+	line-height: 51px;
+	text-align: right;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: #D84033;
+}
+
+.features_list {	
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-left: 90px;
+	margin-right: 88px;
+}
+
+.features_item {
+	margin-right: 160px;
+	margin-bottom: 35px;
+	margin-top: 40px;
+}
+
+.smallLogo {
+	margin-left: 112px;
+	margin-top: 60px;
+	margin-bottom: 70px;
+	margin-right: 254px;
+	width: 370px;
+	height: 128px;
+}
+
+.smallLogoText {
+	width: 326px;
+	font-size: 14px;
+	line-height: 22px;
+	color: #FFFFFF;
+	margin-top: 22px;
+}
+
+.smallMenu {
+	
+	width: 123px;
+	height: 151px;
+	left: 1029px;
+	top: 1108px;
+	margin-right: 77px;
+	margin-top: 32px;
+}
+
+.smallMenu_text {
+	width: 55px;
+	font-weight: bold;
+	font-size: 10px;
+	line-height: 12px;
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-bottom: 20px;
+}
+
+.smallMenu_item a {
+	font-size: 14px;
+	line-height: 22px;
+	color: #CBCFD4;
+}
+
+.smallMenu_item {
+	margin-bottom: 10px;
+}
+
+.smallMenu_item a:hover {
+	border-bottom: 2px solid #FFFFFF;
+}
+
+.payLogo {
+	margin-top: 12px;
+	width: 131px;
+	height: 135.55px;
+	margin-right: 80px;
+}
