@@ -141,7 +141,7 @@ a {
 
 .offer_intro {
 	font-weight: normal;
-	font-size: 30px;
+	font-size: 25px;
 	line-height: 37px;
 	letter-spacing: 0.02em;
 	color: #000000;
@@ -159,23 +159,30 @@ a {
 
 .btn-shop_header {
 	margin-top: 55px;
-	margin-bottom: 326px;
+	margin-bottom: 250px;
 }
 
 .pic {
 	background: url("../authentication/image/knife.png") no-repeat left top;
-	position: absolute;
+/*	position: absolute;
 	left: 950px;
-	top: 236px;
+	top: 236px;*/
 	width: 640px;
 	height: 366px;
-	margin-bottom: 198px;
+	margin-top: 150px;
+/*	margin-bottom: 198px;*/
+}
+
+.price {
+	margin-top: 169px;
+	margin-left: auto;
+	margin-right: 0;
 }
 
 .item_price_old {
-	position: absolute;
+/*	position: absolute;
 	left: 1514px;
-	top: 256px;
+	top: 256px;*/
 	font-weight: bold;
 	font-size: 24px;
 	line-height: 29px;
@@ -187,9 +194,9 @@ a {
 }
 
 .item_price_new {
-	position: absolute;
+/*	position: absolute;
 	width: 163px;
-	height: 51px;
+	height: 51px;*/
 	left: 1462px;
 	top: 299px;
 	font-weight: bold;
