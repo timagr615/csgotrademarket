@@ -62,3 +62,6 @@ class SteamUser(AbstractBaseUser, PermissionsMixin):
 
     def get_full_name(self):
         return self.personaname
+
+    def get_steam_id(self):
+        return self.steamid

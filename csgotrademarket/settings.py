@@ -35,6 +35,7 @@ INSTALLED_APPS = [
 	'django.contrib.staticfiles',
 	'authentication',
 	'social_django',
+	'market',
 ]
 
 MIDDLEWARE = [

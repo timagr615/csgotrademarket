@@ -12,7 +12,7 @@
 </head>
 <body>
     <header class="header" id="header">
-        <div class="pic"></div>
+        <!--<div class="pic"></div>-->
         <div class="container">
             <div class="nav">
                 <ul class="menu">
@@ -25,30 +25,37 @@
                     <li class="menu_item">
                         <a href="#">Боты</a>
                     </li>
+                    <li class="menu_item">
+                        <a href="{% url "market:market_main" %}">
+                        Открыть магазин
+                    </a>
+                    </li>
                 </ul>
-                <a href="#" class="logo">
+                <a href="{% url "market:market_main" %}" class="logo">
                     <img src="{% static 'authentication/image/mainLogo.png' %}" alt="CSGOTRADEMARKET">
                 </a>
-                {% block content %}
+                {% block auth %}
                 {% endblock %}
             </div>
             <div class="offer">
                 <div class="offer_content">
-                    <div class="offer_intro">
+                    <!--<div class="offer_intro">
                         Скины по самым выгодным ценам
                     </div>
                     <p class="offer_title">
                         СКИДКИ ДО 50%
-                    </p>
-                    <a href="#" class="btn-shop btn-shop_header">
+                    </p>-->
+                    {% block info %}
+                    {% endblock %}
+                    <a href="{% url "market:market_main" %}" class="btn-shop btn-shop_header">
                         Открыть магазин
                     </a>
-                    <div class="item_price_old">
+                    <!--<div class="item_price_old">
                         3800 ₽
                     </div>
                     <div class="item_price_new">
                         1900 ₽
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>

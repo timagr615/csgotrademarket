@@ -1,0 +1,36 @@
+{% extends "wrapper.html" %}
+{% block auth %}
+    {% if user.is_authenticated %}
+        <a  href="{% url "auth:logout" %}" class="btn btn_header">
+             <li class="btn_item">
+                <img src="static/authentication/image/steamLogo.png" alt="steam">
+            </li>
+            <li class="btn_item">
+            Выйти из Steam
+            </li>
+        </a>
+<!--        <br>-->
+<!--        Hello, {{ user.personaname }}-->
+<!--        <br>-->
+<!--        {{ name }}-->
+    {% else %}
+        <a  href="{% url "social:begin" "steam" %}" class="btn btn_header">
+            <li class="btn_item">
+                <img src="static/authentication/image/steamLogo.png" alt="steam">
+            </li>
+            <li class="btn_item">
+            Войти через Steam
+            </li>
+        </a>
+    {% endif %}
+{% endblock %}
+{% block info %}
+    {% if user.is_authenticated %}<a  href="{% url "market:my_inventory" %}">Мой Инвентарь</a>{% endif %}<br><br>
+    <a  href="{% url "market:update_inventory" %}">Обновить инвентарь маркета</a>
+    <ul>
+    {% for item in bot %}
+        <li><img width = "170" height = "125" src="{{ item.icon }}"> {{ item.name }}    {{ item.exterior }}    {{ item.tradable }}</li>
+    {% endfor %}
+    </ul>
+
+{% endblock %}

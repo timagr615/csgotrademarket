@@ -1,13 +1,13 @@
 {% extends "wrapper.html" %}
 
-{% block content %}
+{% block auth %}
     {% if user.is_authenticated %}
         <a  href="{% url "auth:logout" %}" class="btn btn_header">
              <li class="btn_item">
                 <img src="static/authentication/image/steamLogo.png" alt="steam">
             </li>
             <li class="btn_item">
-            Выйти из steam
+            Выйти из Steam
             </li>
         </a>
 <!--        <br>-->
@@ -20,7 +20,7 @@
                 <img src="static/authentication/image/steamLogo.png" alt="steam">
             </li>
             <li class="btn_item">
-            Войдите через steam
+            Войти через Steam
             </li>
         </a>
     {% endif %}

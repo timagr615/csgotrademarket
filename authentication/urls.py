@@ -1,11 +1,8 @@
-from django.conf.urls import url
-from django.contrib.auth.decorators import login_required
-
+from django.urls import path
 from . import views as v
-from django.contrib.auth import views as auth_views
 
 app_name = 'auth'
 urlpatterns = [
-    url('logout', v.logout_view, name='logout'),
-    url('', v.login_view, name='authPage'),
+    path('logout', v.logout_view, name='logout'),
+    path('', v.login_view, name='authPage'),
 ]
